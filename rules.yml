@@ -1,0 +1,28 @@
+version: "3.1"
+
+rules:
+  - rule: Say goodbye anytime the user says goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+      - action: action_new_sym 
+  - rule: Say 'can you please speak in complete sentence' anytime the user says 'yes' or 'no'
+    steps:
+      - action: action_default_ask_rephrase
+  - rule: Close the conversation after both user and bot say goodbye
+    steps:
+      - action: action_restart
+  - rule: Close the conversation after the user says 'ok'
+    steps:
+      - action: action_restart
+  - rule: Say 'I am a bot' anytime the user challenges
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+
+
+#- rule: new symptom
+ #   steps:
+ #     - intent: default
+  #    - action: utter_default
+   #   - action: action_new_sym

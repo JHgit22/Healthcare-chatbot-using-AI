@@ -1,0 +1,209 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - ok
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - ok bye
+    - ok thank you
+    - ok
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - who are you
+    - are you a doctor
+- intent: cold
+  examples: |
+    - I have a cough
+    - I have a cold
+- intent: cold_sym
+  examples: |
+    - My nose is choked
+    - My chest is aching
+    - My nose is itching
+    - My throat is itching
+    - i have runny nose
+    - i have cold
+- intent: cold_confirm
+  examples: |
+    - yes i am having cold and cough
+    - yes i am having cold
+    - yes i am having cough
+    - yes
+    - ya
+    - i think
+    - i think so
+- intent: med_not_helped
+  examples: |
+    - No, i am still not felling better after having benadryl.
+    - No, i am still not felling better after having crocin.
+    - i am not feeling better
+    - medicine did not helped me
+    - i am not feeling well after taking the medicine
+    - i feel worse after taking the medicine
+    - i feel worse
+- intent: med_helped
+  examples: |
+    - medicine helped me
+    - i am feeling better now
+    - it was good medicine
+    - feeling good after the medicine
+    - i am feeling better
+- intent: not_well
+  examples: |
+    - I am not feeling well
+    - i feel sick
+    - i am sick
+    - i am not well
+    - i am not happy
+    - i am not fine
+    - i am sad
+- intent: well
+  examples: |
+    - i feel fine
+    - i am feeling fine
+    - i feel great
+    - i feel awesome
+    - I am fine
+    - i am well
+    - i feel good
+- intent: fever_sym
+  examples: |
+    - My body temperature has raised
+    - I am shivering
+    - I am feeling weak
+    - I have weakness in my body
+    - i am having fever
+    - fever
+    - there is rise in body temp
+    - i have rise in body temperature
+    - i have body pain with rise in temperature
+    - full body pain with temp rise
+    - pain in my entire body
+    - rise in body temp
+    - i have rise in body temp
+- intent: fracture_sym
+  examples: |
+    - my hand is aching
+    - my leg is aching
+    - i have pain in hand
+    - my hand is paining
+    - my joint is aching
+    - sudden pain in my limbs
+    - sudden pain in my hands
+    - sudden pain in my legs
+    - sudden pain in some of my body parts
+    - there is welling in my leg
+- intent: fracture_details
+  examples: |
+    - it is a mild ache
+    - yes there is a swelling
+    - yes there is a physical deformity
+    - yes it is bleeding
+    - i have sudden aching
+    - i got hurt
+    - i got hurt recently
+    - i fell down
+    - sudden body pain
+- intent: fracture_accepted
+  examples: |
+    - yes i think it is fracture
+    - yes it is hurting
+    - it is fratcure
+    - it hurts and there is swelling
+    - there is swelling
+    - swelling present
+- intent: headache
+  examples: |
+    - i have a headache
+    - i am having pain in forehead
+    - i have head pain
+    - pain in head
+    - i have headache
+    - i ahve headache
+    - my head hurts
+    - my friend has headache
+- intent: migrane
+  examples: |
+    - i have a migrane headache
+    - migrane headache
+    - migrane
+    - intense pain on only one side
+    - head pain on just one side
+- intent: cluster_headache
+  examples: |
+    - i have a cluster headache
+    - cluster headache
+    - cluster
+- intent: tension_headache
+  examples: |
+    - i have a tension headache
+    - tension headache
+    - tension
+    - occasional headache
+- intent: nlu_fallback
+  examples: |
+    - close rasa interatcive
+- intent: stomach_ache
+  examples: |
+    - i have stomach ache
+    - my stomach hurts
+- intent: food_poisoning
+  examples: |
+    - ache with indigestion
+    - indigestion
+- intent: diarrhea_sym
+  examples: |
+    - ache with nausea
+    - loose stools
+    - loose motion
+- intent: body_pain
+  examples: |
+    - i have body pain
+    - my body hurts
+    - i have body ache
+- intent: fatigue_sym
+  examples: |
+    - fatigue
+    - i am always tired
+    - tiredness
+- intent: default
+  examples: |
+    - bleeding is there
+    - i have skin infection.
+    - i have rashes
+- intent: acidity
+  examples: |
+    - i have acidity
+    - burning sensation
+- intent: feedback
+  examples: |
+    - ok
+    - i'll see

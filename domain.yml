@@ -1,0 +1,112 @@
+version: '3.1'
+intents:
+- acidity
+- body_pain
+- bot_challenge
+- cluster_headache
+- cold
+- cold_confirm
+- cold_sym
+- default
+- diarrhea_sym
+- fatigue_sym
+- feedback
+- fever_sym
+- food_poisoning
+- fracture_accepted
+- fracture_details
+- fracture_sym
+- goodbye
+- greet
+- headache
+- med_helped
+- med_not_helped
+- meet_again
+- migrane
+- nlu_fallback
+- not_well
+- stomach_ache
+- tension_headache
+- well
+actions:
+- utter_greet
+- utter_not_well
+- utter_well
+- action_new_sym
+- utter_fever_med
+- utter_fracture_confirm
+- utter_goodbye
+- utter_fracture_details
+- utter_fracture_sym
+- utter_body_pain_type
+- utter_feedback
+- utter_migrane
+- utter_headache_type
+- utter_tension_headache
+- utter_stomach_ache_type
+- utter_acidity
+- utter_default
+- utter_food_poisoning
+- utter_cold_sym
+- meet_again
+- utter_diarrhea_sym
+- utter_fatigue_sym
+- utter_iamabot
+- utter_cold_med
+- utter_med_not_helped
+- utter_med_helped
+- utter_cluster_headache
+responses:
+  utter_default:
+  - text: Go to the doctor ASAP!!
+  utter_greet:
+  - text: Hey! I am your medical assistant. How can i help you
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a your healthcare assistant
+  utter_cold_sym:
+  - text: Okay, this is a symptom of cold, do you have cold?
+  utter_cold_med:
+  - text: You should take a spoon full of benadryl after your meal.
+  utter_feedback:
+  - text: let me know if you are feeling better
+  utter_med_not_helped:
+  - text: Ok, you should consult a doctor ASAP.
+  utter_med_helped:
+  - text: Ok, so better to carry on medicine for 2 more days
+  utter_not_well:
+  - text: Okay, can you tell me what's wrong? what are your symptoms?
+  utter_well:
+  - text: great to know. how can i assist you then?
+  utter_fever_med:
+  - text: This is a symptom of fever, you should take a tablet of crocin after you have your meal.
+  utter_fracture_sym:
+  - text: okay, did you get hurt, or it is a sudden aching.
+  utter_fracture_details:
+  - text: ok, is there a swelling or a physical deformity or bleeding at the aching region.
+  utter_fracture_confirm:
+  - text: '- okay, it is a common symptom of fracture, you should consult a doctor ASAP.'
+  utter_headache_type:
+  - text: 'what kind of headache do you have : 1. Migrane headache - intense throbbing pain on just one side of the head. 2. Cluster headaches - severe and recurrent headaches 3. Tension Headache - Ocassional'
+  utter_migrane:
+  - text: symptom noted. Migraines tend to be recurrent, and each attack may last up to 3 days otherwise consult to doctor
+  utter_cluster_headache:
+  - text: symptom noted. Attacks tend to occur in daily clusters that can persist for weeks or months. They typically take place at the same time of day, which can often be a couple of hours after falling asleep at night. Better to consult to doctor
+  utter_tension_headache:
+  - text: symptom noted. The cause of tension headaches is unclear, but stress, anxiety, and depression are common triggers. If it happens regularly then consult to doctor
+  utter_stomach_ache_type:
+  - text: 'what kind of symptoms with stomach ache do you have: 1. Ache with burning sensation 2. Ache with indigestion 3. Ache with nausea/loose motion '
+  utter_acidity:
+  - text: You have acidity. Take antacids and avoid spicy food. If symptoms persist for more than 2 days, go to the doctor
+  utter_food_poisoning:
+  - text: You have food poisoning. Take loperamide (Imodium A-D). If symptoms persist or if you have fever, go to the doctor.
+  utter_diarrhea_sym:
+  - text: You have diarrhea. Go to the doctor immediately.
+  utter_body_pain_type:
+  - text: What kind of body pain do you have? 1. Fatigue 2. Body pain with rise in body temp 3. Sudden body pain or got hurt recently
+  utter_fatigue_sym:
+  - text: You have fatigue. Take some rest.
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
